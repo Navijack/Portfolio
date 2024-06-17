@@ -42,7 +42,7 @@ const Navbar = () => {
         </li>
         <li>
           <Link to='contact' smooth={true} duration={500}>
-            Contact
+            Contacts
           </Link>
         </li>
       </ul>
