@@ -1,6 +1,7 @@
 import React from 'react';
 import { data } from "../data/data.js";
-
+import WorkImg from '../assets/workImg.jpeg';
+import realestate from '../assets/realestate.jpg';
 
 const Work = () => {
 
@@ -15,7 +16,7 @@ const Work = () => {
           <p className='text-4xl font-bold inline border-b-4 text-gray-300 border-green-300'>
             Work
           </p>
-          <p className='py-6'>Check out some of my recent work</p>
+          <p className='py-6'>// Check out some of my recent work</p>
         </div>
 
         {/* container for projects */}
@@ -25,7 +26,7 @@ const Work = () => {
           {project.map((item, index) => (
             <div
               key={index}
-              style={{ backgroundImage: `url(${item.image})` }}
+              style={{ backgroundImage: `url(${WorkImg, realestate})` }}
               className="shadow-lg shadow-[#040c16] group container rounded-md 
               flex justify-center text-center items-center mx-auto content-div "
             >
