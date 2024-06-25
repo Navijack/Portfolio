@@ -1,13 +1,11 @@
 import React from 'react';
 import { data } from "../data/data.js";
-import WorkImg from '../assets/workImg.jpeg';
-import realestate from '../assets/realestate.jpg';
+import hero from '../assets/hero.jpeg'; // Import the hero image
+import realestate from '../assets/realestate.jpg'; // Import the realestate image
 
 const Work = () => {
-
   // projects file
-  const project = data;
-  //setProject(data);
+  const projects = data.slice(0, 3); // Slice to get only the first three projects
 
   return (
     <div name='work' className='w-full md:h-screen text-gray-300 bg-[#0a192f]'>
@@ -21,12 +19,15 @@ const Work = () => {
 
         {/* container for projects */}
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-
-          {/* Gird Item */}
-          {project.map((item, index) => (
+          {/* Grid Item */}
+          {projects.map((item, index) => (
             <div
               key={index}
-              style={{ backgroundImage: `url(${, realestate})` }}
+              style={{
+                backgroundImage: `url(${index % 2 === 0 ? hero : realestate})`, // Alternate between hero and realestate images
+                backgroundSize: 'cover',
+                backgroundPosition: 'center'
+              }}
               className="shadow-lg shadow-[#040c16] group container rounded-md 
               flex justify-center text-center items-center mx-auto content-div "
             >
@@ -58,8 +59,6 @@ const Work = () => {
               </div>
             </div>
           ))}
-
-
         </div>
       </div>
     </div>
