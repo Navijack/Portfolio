@@ -2,6 +2,7 @@ import React from 'react';
 import { data } from "../data/data.js";
 import hero from '../assets/hero.jpeg'; // Import the hero image
 import realestate from '../assets/realestate.jpg'; // Import the realestate image
+import datadata from '../assets/datadata.jpg'; // Import the datadata image
 
 const Work = () => {
   // projects file
@@ -24,7 +25,7 @@ const Work = () => {
             <div
               key={index}
               style={{
-                backgroundImage: `url(${index % 2 === 0 ? hero : realestate})`, // Alternate between hero and realestate images
+                backgroundImage: `url(${index === 1 ? datadata : index % 2 === 0 ? hero : realestate})`, // Alternate between hero, realestate, and datadata images
                 backgroundSize: 'cover',
                 backgroundPosition: 'center'
               }}

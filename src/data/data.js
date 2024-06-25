@@ -1,5 +1,6 @@
 import hero from '../assets/hero.jpeg'
 import RealEst from '../assets/realestate.jpg'
+import datadata from '../assets/datadata.jpg'
 
 export const data = [
   {
@@ -12,14 +13,14 @@ export const data = [
   {
     id: 2,
     name: "Data Web Page ",
-    image: RealEst,
+    image: datadata,
     github: "",
     live: "",
   },
   {
     id: 3,
     name: "React JS Application",
-    image: hero,
+    image: RealEst,
     github: "",
     live: "",
   },
