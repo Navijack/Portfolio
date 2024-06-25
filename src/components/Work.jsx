@@ -26,7 +26,7 @@ const Work = () => {
           {project.map((item, index) => (
             <div
               key={index}
-              style={{ backgroundImage: `url(${WorkImg, realestate})` }}
+              style={{ backgroundImage: `url(${, realestate})` }}
               className="shadow-lg shadow-[#040c16] group container rounded-md 
               flex justify-center text-center items-center mx-auto content-div "
             >
