@@ -21,16 +21,6 @@ const Home = () => {
           exceptional digital experiences. Currently, I’m focused on creating responsive and
           interactive web interfaces
         </p>
-        <div>
-          <button className='text-green-400 uppercase font-bold animate-pulse
-           border-green-400 group border-2 px-6 py-3 my-2 flex items-center hover:bg-green-200 hover:border-green-400
-            hover:text-black'>
-            View Work
-            <span className='group-hover:rotate-90 duration-300'>
-              <HiArrowNarrowRight className='ml-3 ' />
-            </span>
-          </button>
-        </div>
       </div>
     </div>
   );

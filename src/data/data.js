@@ -3,11 +3,10 @@ import RealEst from '../assets/realestate.jpg'
 
 export const data = [
   {
-    id: 1,
-    name: "React JS Application",
-    image: WorkIm,
-    github: "",
-    live: "",
+    name: 'Project 1',
+    github: 'https://github.com/Navijack/AppleWebsite',
+    live: 'https://navijack.github.io/',
+    // other properties...
   },
   {
     id: 2,
