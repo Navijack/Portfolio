@@ -1,12 +1,16 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
 import React from 'react';
 import { data } from "../data/data.js";
 import hero from '../assets/hero.jpeg'; // Import the hero image
-import realestate from '../assets/realestate.jpg'; // Import the realestate image
 import datadata from '../assets/datadata.jpg'; // Import the datadata image
+import photo from '../assets/photo.jpg'; // Import the photo image
 
 const Work = () => {
   // projects file
   const projects = data.slice(0, 3); // Slice to get only the first three projects
+
+  // Define the images for each project explicitly
+  const projectImages = [hero, datadata, photo];
 
   return (
     <div name='work' className='w-full md:h-screen text-gray-300 bg-[#0a192f]'>
@@ -25,7 +29,7 @@ const Work = () => {
             <div
               key={index}
               style={{
-                backgroundImage: `url(${index === 1 ? datadata : index % 2 === 0 ? hero : realestate})`, // Alternate between hero, realestate, and datadata images
+                backgroundImage: `url(${projectImages[index]})`, // Use specific image for each project
                 backgroundSize: 'cover',
                 backgroundPosition: 'center'
               }}
@@ -58,4 +62,6 @@ const Work = () => {
 };
 
 export default Work;
+
+
 
