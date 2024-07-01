@@ -17,7 +17,7 @@ export const data = [
   },
   {
     name: 'Gym App',
-    github: 'https://gymaapp-ludu.vercel.app/',
+    github: 'https://gymaapp.vercel.app/',
     image: photo// Updated URL for the third project
   },
 ]
