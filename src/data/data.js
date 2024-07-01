@@ -6,18 +6,18 @@ export const data = [
   {
     name: 'Apple iPhone',
     image: hero,
-    github: 'https://github.com/Navijack/AppleWebsite',
+    github: 'https://apple-website-bay.vercel.app/',
   },
   {
     id: 2,
     name: "Data Web Page ",
     image: datadata,
-    github: "https://github.com/Navijack/data-project",
+    github: "https://data-project-mu.vercel.app/",
 
   },
   {
     name: 'Gym App',
-    github: 'https://github.com/Navijack/Gymaapp',
+    github: 'https://gymaapp-ludu.vercel.app/',
     image: photo// Updated URL for the third project
   },
 ]
