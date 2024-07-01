@@ -20,4 +20,9 @@ export const data = [
     github: 'https://gymaapp.vercel.app/',
     image: photo// Updated URL for the third project
   },
+  {
+    name: 'Travel Site',
+    github: 'https://travel-site-livid.vercel.app/',
+    image: photo// Updated URL for the third project
+  },
 ]

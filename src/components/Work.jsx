@@ -4,13 +4,14 @@ import { data } from "../data/data.js";
 import hero from '../assets/hero.jpeg'; // Import the hero image
 import datadata from '../assets/datadata.jpg'; // Import the datadata image
 import photo from '../assets/photo.jpg'; // Import the photo image
+import newProjectImage from '../assets/newProjectImage.jpg'; // Import the new project image
 
 const Work = () => {
   // projects file
-  const projects = data.slice(0, 3); // Slice to get only the first three projects
+  const projects = data.slice(0, 4); // Slice to get the first four projects
 
   // Define the images for each project explicitly
-  const projectImages = [hero, datadata, photo];
+  const projectImages = [hero, datadata, photo, newProjectImage];
 
   return (
     <div name='work' className='w-full md:h-screen text-gray-300 bg-[#0a192f]'>
