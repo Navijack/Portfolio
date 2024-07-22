@@ -18,7 +18,7 @@ const Home = () => {
         </h2>
         <p className='text-[#8892b0] py-4 max-w-[700px]'>
           I’m a frontend developer specializing in building incredible digital experiences. Currently, I’m focused on creating responsive and
-          interactive web interfaces
+          interactive web interfaces.
         </p>
       </div>
     </div>
